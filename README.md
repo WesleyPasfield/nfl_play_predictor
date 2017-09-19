@@ -1,4 +1,4 @@
-# nfl_play_predictor
+# NFL Play Predictor
 Predict what's coming next in the NFL!
 
 In all levels of football, on-field trends are typically discerned exclusively through voluminous film study of opponent history, and decisions are made using anecdotal evidence and gut instinct. These methods in isolation are highly inefficient and prone to human error.
