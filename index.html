@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>NFL Play Predictor</title>
+  <style type="text/css">
+    body, html {
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #F5F5F5;
+      color: #114;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #titleBar {
+      height: 80px;
+      background-color: #3475b4;
+      overflow: hidden;
+      border-bottom: 1px solid #3475b3;
+      -moz-box-shadow:    0px 0px 10px 3px #BBC;
+      -webkit-box-shadow: 0px 0px 10px 3px #BBC;
+      box-shadow:         0px 0px 10px 3px #BBC;
+    }
+    #titleBar #container {
+      margin-top: 14px;
+    }
+    #titleBar h1 {
+      margin: 0 auto .5em auto;
+      padding: .2em;
+      color: #EEE;
+      text-align: center;
+    }
+    #intro {
+      background-color: #DDD;
+      margin: 1em 1em 0 1em;
+      padding: .75em;
+      text-align: center;
+      border: 1px solid #CCC;
+      font-size: 18px;
+    }
+    #intro p {
+      margin: .3em 0 .3em 0;
+    }
+    #outer-content {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #content {
+      margin: 1em auto 1em auto;
+      float: left;
+    }
+    #main{
+      margin-left: 5em;
+      margin-right: 2cm;
+      float: left;
+      line-height: 24px;
+    }
+
+    code {
+      background-color: #E5E5E5;
+      border: 1px solid #AAA;
+      -webkit-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      -moz-border-radius: 3px;
+         border-radius: 3px;
+      padding: 0 .5em 0 .5em;
+    }
+  </style>
+</head>
+<body>
+  <div id="titleBar">
+    <div id="container">
+      <h1>Welcome to the NFL Play Predictor!</h1>
+    </div>
+  </div>
+  <div id="outer-content">
+    <div id="intro">
+      <p>This page is home to the NFL play predictor, a tool that allows you to predict what NFL teams will run next</p>
+    </div>
+    <div id="content">
+      <div id="main">
+      <h2><pre><center><a href="./nfl-predictor/">Click to go to the NFL Play Predictor!</a></center></pre></h2>
+
+        <h2><pre> How do I use this tool? </pre></h2>
+
+        Use the left panel to create your scenario. You can use this to create a hypothetical scenario for any
+        matchup from 2013-2016, or for a new scenario watching in real time.
+        <p>2017 will get included into the 2016/2017 season initially. Once the 2017 season has a large enough sample size it will be broken out separately.
+
+        <h2><pre> Chart Descriptions </pre></h2>
+
+        <p><strong>Top Chart</strong>-  This section contains probabilities based on all the inputs selected. The probability of a TD and First Down on this play, and the probability of a TD on this drive are self explanatory. The Expected points from a TD on this drive is simply the probability of a TD on this drive multiplied by 6.942, 6 for the TD, and 0.942 because that was the NFL-wide 2016 extra point conversion rate average. </p>
+        <p><strong>Percentage chance of Pass vs. Run</strong> - This shows the likelihood the offense will pass or run based on the scenario created</p>
+        <p><strong>Percentage chance of Play Type and Direction</strong> - This does the same, but details out likelihood of where the play will be run (left, right, middle)</p>
+        <p><strong>Boxplot of Percentage Chance of Passing by Team</strong> - This shows how the team selected compares versus all other teams in their likelihood of calling a pass play in this same scenario. This is an excellent way to determine whether the offensive team acts differently than the typical NFL team based on historic evidence. Only the most likely to pass, least likely to pass and team selected are given a label for display purposes </p>
+        <p><strong>The Boxplot of a TD on this Drive by Team</strong> - This chart shows how likely each team is to score on the drive based on the scenario created. Like the Pass likelihood boxplot, only the most likely, least likely and team selected are given a label for display purposes.</p>
+
+        <h2><pre> Data Dictionary </pre></h2>
+
+        <p><strong>Season</strong> - Season you are simulating. 2016/2017 will be broken out when there's sufficient sample size ofr 2017</p>
+        <p><strong>Home</strong> Team - Home team in simulation </p>
+        <p><strong>Away Team</strong> - Away team in simulation </p>
+        <p><strong>Home Team Score</strong> - Home team score prior to play</p>
+        <p><strong>Away Team Score</strong> - Away team score prior to play</p>
+        <p><strong>Home Timeouts Left</strong> - Number of timeouts home team has prior to play</p>
+        <p><strong>Away Timeouts Left</strong> - Number of timeouts away team has prior to play</p>
+        <p><strong>Team with Ball</strong> - Indicates which team has the ball</p>
+        <p><strong>Quarter</strong> - Quarter play will take place in</p>
+        <p><strong>Minutes left in Quarter</strong> - Amount of time in minutes remaining in quarter prior to play </p>
+        <p><strong>Yard Line</strong> - Yard line where play is taking place. Currently 51-100 is own territory, 1-50 is opponent territory</p>
+        <p><strong>Down</strong> - Down the play corresponds with</p>
+        <p><strong>Yards to Go</strong> - Yards needed for first down</p>
+        <p><strong>Offensive Formation</strong> - Offensive Formation the team with the ball lines up with</p>
+
+        <h2><pre>About the Author / Questions </pre></h2>
+        <p>If there are any questions reach out to Wesley Pasfield at wesley dot pasfield at gmail dot com</p>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
