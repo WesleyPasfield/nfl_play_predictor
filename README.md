@@ -11,6 +11,9 @@ Click the link below to try it out!
 
 http://wespasplaypredictor.com/
 
-The app was built in Shiny, and the website hosted using the AWS stack (an ec2 instance with a custom domain using Route 53). Check out the blog below for more details, I'll be publishing a series of posts on methods for this project.
+The app was built in Shiny, and the website hosted using the AWS stack (an ec2 instance with a custom domain using Route 53). Check out the blog posts below for more details, I'll be publishing a series of posts on methods for this project. The first post goes into the predictor itself, while the second focuses on how to host a Shiny Application using Amazon EC2, and how to set up a custom domain name for that application.
 
 https://wesleypasfield.wordpress.com/2017/09/17/predicting-nfl-plays-with-the-xgboost-decision-tree-algorithm-wespasplaypredictor-com/
+
+https://wesleypasfield.wordpress.com/2017/11/13/hosting-an-r-shiny-application-on-amazon-ec2/
+
